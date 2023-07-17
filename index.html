@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age calculator</title>
+  <link rel="icon" href="assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/contato.css">
+</head>
+
+<body>
+  <header>
+    <div class="personal">
+      <p class="autor">Deivid Esteferson</p>
+      <nav class="personal__nav">
+        <a class="personal__link" href="https://www.frontendmentor.io/profile/deivid-esf">FrontendMentor</a>
+        <a class="personal__link" href="https://www.linkedin.com/in/deivid-esf/">LinkedIn</a>
+        <a class="personal__link" href="https://github.com/deivid-esf">Github</a>
+      </nav>
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
+  
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="secao-entrada">
+        <div class="campo">
+          <label id="label-day" for="day">Day</label>
+          <input type="number" name="day" id="day" placeholder="DD" required />
+          <p class="atencao" id="day-atention"></p>
+        </div>
+        <div class="campo">
+          <label id="label-month" for="month">Month</label>
+          <input type="number" name="month" id="month" placeholder="MM" required />
+          <p class="atencao" id="month-atention"></p>
+        </div>
+        <div class="campo">
+          <label id="label-year" for="year">Year</label>
+          <input type="number" name="year" id="year" placeholder="YYYY" required />
+          <p class="atencao" id="year-atention"></p>
+        </div>
+        <p id="aviso-geral"></p>
+      </section>
+      <section class="secao-separa">
+        <button class="flecha" id="calcular"><img src="assets/images/icon-arrow.svg" alt="Flecha"></button>
+      </section>
+      <section class="secao-saida">
+        <p><span id="year-output">--</span>years</p>
+        <p><span id="month-output">--</span>months</p>
+        <p><span id="day-output">--</span>days</p>
+      </section>
+    </div>
+  </main>
+  <script src="index.js"></script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+
+</html>
